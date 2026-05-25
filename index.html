@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ApexFlow Automations | Scale Your Business with AI & Workflows</title>
+    <title>Kagura Chicken Pastil | Authentic Halal Flavors with an Arabic Twist</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- FontAwesome for Icons -->
@@ -11,324 +11,300 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        h1, h2, h3, .font-display {
+            font-family: 'Space Grotesk', sans-serif;
+        }
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
         }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-100 antialiased overflow-x-hidden">
+<body class="bg-amber-50/50 text-stone-800 antialiased overflow-x-hidden">
 
-    <!-- Header / Navigation -->
-    <header class="fixed top-0 left-0 right-0 z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+    <!-- Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-amber-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
-                <!-- Logo -->
+                <!-- Logo / Mascot Concept -->
                 <div class="flex-shrink-0 flex items-center">
-                    <a href="#" class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent flex items-center gap-2">
-                        <i class="fa-solid to-indigo-500 from-blue-400 fa-cubes-stacked"></i>
-                        ApexFlow
+                    <a href="#" class="text-2xl font-bold text-amber-700 flex items-center gap-2">
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-amber-600 text-white text-xl shadow-md">
+                            <i class="fa-solid fa-cloud"></i>
+                        </span>
+                        <span class="tracking-tight text-stone-900">Kagura</span>
                     </a>
                 </div>
                 
-                <!-- Desktop Nav Links -->
-                <nav class="hidden md:flex space-x-8 text-sm font-medium">
-                    <a href="#services" class="text-slate-300 hover:text-blue-400 transition-colors">Services</a>
-                    <a href="#proof" class="text-slate-300 hover:text-blue-400 transition-colors">Results</a>
-                    <a href="#process" class="text-slate-300 hover:text-blue-400 transition-colors">Our Process</a>
-                    <a href="#contact" class="text-slate-300 hover:text-blue-400 transition-colors">Contact</a>
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 text-sm font-semibold tracking-wide uppercase">
+                    <a href="#menu" class="text-stone-600 hover:text-amber-600 transition-colors">The Pastil</a>
+                    <a href="#flavors" class="text-stone-600 hover:text-amber-600 transition-colors">Arabic Twist</a>
+                    <a href="#reviews" class="text-stone-600 hover:text-amber-600 transition-colors">Taste Test</a>
+                    <a href="#order" class="text-stone-600 hover:text-amber-600 transition-colors">Order Now</a>
                 </nav>
 
                 <!-- Desktop CTA -->
                 <div class="hidden md:flex items-center">
-                    <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 transition-all shadow-lg shadow-blue-500/20 active:scale-95">
-                        Book a Free Audit
+                    <a href="#order" class="inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-bold text-white bg-amber-600 hover:bg-amber-500 transition-all shadow-md shadow-amber-600/20 active:scale-95">
+                        Order Grab / Foodpanda
                     </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
                 <div class="flex md:hidden">
-                    <button id="mobile-menu-btn" type="button" class="text-slate-400 hover:text-white focus:outline-none" aria-label="Toggle menu">
+                    <button id="mobile-menu-btn" type="button" class="text-stone-700 hover:text-amber-600 focus:outline-none">
                         <i id="menu-icon" class="fa-solid fa-bars text-xl"></i>
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- Mobile Menu (Hidden by default) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
-            <a href="#services" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white transition-colors">Services</a>
-            <a href="#proof" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white transition-colors">Results</a>
-            <a href="#process" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white transition-colors">Our Process</a>
-            <a href="#contact" class="block px-3 py-2 rounded-lg text-base font-medium text-slate-300 hover:bg-slate-800 hover:text-white transition-colors">Contact</a>
-            <a href="#contact" class="block w-full text-center px-4 py-3 rounded-lg text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600">Book a Free Audit</a>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-amber-100 px-4 pt-2 pb-6 space-y-3">
+            <a href="#menu" class="block px-3 py-2 rounded-lg text-base font-medium text-stone-700 hover:bg-amber-50 hover:text-amber-600">The Pastil</a>
+            <a href="#flavors" class="block px-3 py-2 rounded-lg text-base font-medium text-stone-700 hover:bg-amber-50 hover:text-amber-600">Arabic Twist</a>
+            <a href="#reviews" class="block px-3 py-2 rounded-lg text-base font-medium text-stone-700 hover:bg-amber-50 hover:text-amber-600">Taste Test</a>
+            <a href="#order" class="block px-3 py-2 rounded-lg text-base font-medium text-stone-700 hover:bg-amber-50 hover:text-amber-600">Order Now</a>
+            <a href="#order" class="block w-full text-center px-4 py-3 rounded-full text-base font-bold text-white bg-amber-600">Order Grab / Foodpanda</a>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
-        <!-- Background Glow Orbs -->
-        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-600/10 blur-[120px] rounded-full pointer-events-none"></div>
-        <div class="absolute top-1/3 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-indigo-600/10 blur-[100px] rounded-full pointer-events-none"></div>
-
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 bg-gradient-to-b from-amber-100/60 to-transparent overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center max-w-3xl mx-auto">
-                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-6">
-                    <span class="flex h-2 w-2 relative">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Left Content -->
+                <div class="text-left max-w-xl">
+                    <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase bg-emerald-100 text-emerald-800 border border-emerald-200 mb-6">
+                        <i class="fa-solid fa-circle-check"></i> 100% Certified Halal Ingredients
                     </span>
-                    Now Booking for Q3 Optimization Cycles
-                </span>
-                <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.15] mb-6">
-                    Stop wasting hours on tasks that <span class="bg-gradient-to-r from-blue-400 via-indigo-400 to-purple-400 bg-clip-text text-transparent">AI can do in seconds</span>
-                </h1>
-                <p class="text-lg md:text-xl text-slate-400 font-normal leading-relaxed mb-10 max-w-2xl mx-auto">
-                    We design, build, and deploy custom AI agents and automated workflows that eliminate manual data entry, scale operations, and capture missed leads 24/7.
-                </p>
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 transition-all shadow-xl shadow-blue-500/20 group">
-                        Eliminate My Bottlenecks
-                        <i class="fa-solid fa-arrow-right ml-2 group-hover:translate-x-1 transition-transform"></i>
-                    </a>
-                    <a href="#services" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-semibold text-slate-300 bg-slate-800/60 border border-slate-700 hover:bg-slate-800 hover:text-white transition-all">
-                        See What We Automate
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services / Features Section -->
-    <section id="services" class="py-20 bg-slate-950 border-y border-slate-800 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-blue-500 mb-3">Our Core Capabilities</h2>
-                <p class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Engineered to replace manual labor</p>
-                <p class="mt-4 text-base text-slate-400">We don't do surface-level integrations. We build deep enterprise infrastructure tailored to your exact operational workflows.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="bg-slate-900 border border-slate-800/80 p-8 rounded-2xl hover:border-blue-500/40 transition-all hover:-translate-y-1 group">
-                    <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 text-xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
-                        <i class="fa-solid fa-robot"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Autonomous AI Assistants</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Custom LLM agents trained on your business data. They qualify incoming leads, schedule calls directly into your CRM, and answer multi-step customer support requests around the clock.
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-stone-900 leading-[1.1] mb-6">
+                        Savory, shredded chicken with a bold <span class="text-amber-600">Arabic Twist</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-stone-600 leading-relaxed mb-8">
+                        Experience pure, authentic comfort food. We pack premium shredded chicken, slow-simmered in rich exotic spices and aromatic oils, directly onto a bed of perfectly steamed rice. No fillers. Pure flavor.
                     </p>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="bg-slate-900 border border-slate-800/80 p-8 rounded-2xl hover:border-indigo-500/40 transition-all hover:-translate-y-1 group">
-                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 text-xl mb-6 group-hover:bg-indigo-600 group-hover:text-white transition-all">
-                        <i class="fa-solid fa-diagram-project"></i>
+                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                        <a href="#order" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full text-base font-bold text-white bg-amber-600 hover:bg-amber-500 transition-all shadow-lg shadow-amber-600/30 group">
+                            Satisfy Your Cravings
+                            <i class="fa-solid fa-fire ml-2 group-hover:animate-bounce"></i>
+                        </a>
+                        <a href="#menu" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-full text-base font-bold text-stone-700 bg-white border border-stone-200 hover:border-amber-300 transition-all">
+                            Explore the Flavors
+                        </a>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Advanced CRM Architecture</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Stop bouncing between ten applications. We design unified data pipelines connecting GoHighLevel, Make, or n8n so information syncs flawlessly without manual extraction.
-                    </p>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="bg-slate-900 border border-slate-800/80 p-8 rounded-2xl hover:border-purple-500/40 transition-all hover:-translate-y-1 group">
-                    <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center text-purple-400 text-xl mb-6 group-hover:bg-purple-600 group-hover:text-white transition-all">
-                        <i class="fa-solid fa-bolt"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">Trigger-Based Lead Nurturing</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        Instantly touch base with prospects the absolute second they signal intent. Deliver custom quotes, dynamic follow-up text campaigns, and auto-generated digital deliverables based on user behavior.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Social Proof / Testimonials Section -->
-    <section id="proof" class="py-20 relative overflow-hidden">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-indigo-400 mb-3">Proven Results</h2>
-                <p class="text-3xl sm:text-4xl font-bold text-white tracking-tight">What happens when operations just flow</p>
-            </div>
-
-            <!-- Slider Wrapper -->
-            <div class="max-w-4xl mx-auto relative">
-                <!-- Testimonial Items -->
-                <div id="testimonial-container" class="relative min-h-[250px] flex items-center">
-                    
-                    <!-- Slide 1 -->
-                    <div class="testimonial-slide w-full bg-gradient-to-b from-slate-800/50 to-slate-900/50 border border-slate-800 p-8 md:p-10 rounded-2xl absolute transition-all duration-500 opacity-100 scale-100 pointer-events-auto">
-                        <div class="flex items-center gap-1 text-amber-400 mb-4">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <!-- Right Visual Placeholder (Clean, Focused, Product-First styling) -->
+                <div class="relative flex justify-center">
+                    <div class="w-full max-w-[420px] aspect-square bg-gradient-to-tr from-amber-600 to-amber-400 rounded-3xl shadow-2xl relative flex items-center justify-center overflow-hidden border-4 border-white group">
+                        <!-- Simulated Product Silhouette Graphic (No veggies or bread placeholders per asset rules) -->
+                        <div class="absolute inset-0 bg-black/10 opacity-40 mix-blend-overlay"></div>
+                        <div class="text-center p-8 z-10 text-white">
+                            <span class="text-6xl block mb-4">🍗</span>
+                            <h3 class="text-2xl font-bold mb-1">Kagura Premium Blend</h3>
+                            <p class="text-amber-100 text-xs tracking-wider uppercase font-medium">Shredded Chicken Pastil & Deep Rice Base</p>
                         </div>
-                        <p class="text-lg md:text-xl text-slate-300 italic mb-6">
-                            "Before working with this team, our administrative workflows were a chaotic mess of spreadsheets and forgotten follow-ups. The custom Make scenario they deployed now auto-books clients and tracks dynamic statuses seamlessly. It saved our team easily 15+ hours every single week."
+                        <!-- Subtle background visual patterns -->
+                        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-amber-500/20 rounded-full blur-2xl"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features / Standard Banner -->
+    <section id="menu" class="py-16 bg-white border-y border-amber-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-xl mx-auto mb-4">
+                        <i class="fa-solid fa-pepper-hot"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-stone-900 mb-2">Signature Spice Infusion</h3>
+                    <p class="text-sm text-stone-600">Our secret shredded chicken recipe balances local favorites with distinctive Middle Eastern notes.</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-xl mx-auto mb-4">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-stone-900 mb-2">Guaranteed Halal</h3>
+                    <p class="text-sm text-stone-600">Prepared with strict compliance and care. We source only high-quality, premium halal ingredients.</p>
+                </div>
+                <div class="p-6">
+                    <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center text-xl mx-auto mb-4">
+                        <i class="fa-solid fa-box"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-stone-900 mb-2">Freshly Packed Heat</h3>
+                    <p class="text-sm text-stone-600">Wrapped securely to trap the moisture and aroma so it arrives steaming hot at your doorstep.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Menu Showcase / Spice Levels -->
+    <section id="flavors" class="py-20 bg-amber-50/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">Pick Your Heat Profile</h2>
+                <p class="text-3xl font-bold text-stone-900 tracking-tight">The Kagura Pastil Menu</p>
+                <p class="mt-3 text-stone-600 text-sm">Every bowl features our masterfully shredded chicken formula over warm, fluffy white rice.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Item 1 -->
+                <div class="bg-white border border-amber-100 p-6 rounded-2xl shadow-sm flex flex-col justify-between hover:border-amber-400 transition-colors">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-2.5 py-1 rounded-md text-xs font-bold uppercase tracking-wide bg-amber-100 text-amber-800">Mild Aromatic</span>
+                            <span class="text-xl font-bold text-amber-700">₱45.00</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Original Arabic Twist Pastil</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Perfect for food lovers who prefer deep, rich savory notes over intense chili heat. Infused with warm cardamom, cumin undertones, and golden garlic oils.
                         </p>
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center font-bold text-blue-400 border border-slate-600">
-                                KL
-                            </div>
-                            <div>
-                                <h4 class="text-white font-semibold">Karen L.</h4>
-                                <p class="text-slate-500 text-sm">Director, Ontario Professional Training Solutions</p>
-                            </div>
-                        </div>
                     </div>
+                    <div class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between">
+                        <span class="text-xs text-stone-400"><i class="fa-solid fa-star text-amber-400 mr-1"></i> Best Seller</span>
+                        <a href="#order" class="text-xs font-bold text-amber-600 hover:text-amber-700">Add to Order <i class="fa-solid fa-plus ml-1"></i></a>
+                    </div>
+                </div>
 
-                    <!-- Slide 2 -->
-                    <div class="testimonial-slide w-full bg-gradient-to-b from-slate-800/50 to-slate-900/50 border border-slate-800 p-8 md:p-10 rounded-2xl absolute transition-all duration-500 opacity-0 scale-95 pointer-events-none">
-                        <div class="flex items-center gap-1 text-amber-400 mb-4">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                <!-- Item 2 -->
+                <div class="bg-white border border-amber-100 p-6 rounded-2xl shadow-sm flex flex-col justify-between hover:border-amber-400 transition-colors">
+                    <div>
+                        <div class="flex justify-between items-start mb-4">
+                            <span class="px-2.5 py-1 rounded-md text-xs font-bold uppercase tracking-wide bg-red-100 text-red-800">Spicy Kick</span>
+                            <span class="text-xl font-bold text-amber-700">₱49.00</span>
                         </div>
-                        <p class="text-lg md:text-xl text-slate-300 italic mb-6">
-                            "The automated AI voice assistant and web intake setup they engineered captured over 40 qualified leads over the weekend alone without human intervention. The ROI became abundantly obvious within the first 14 days of launch."
+                        <h3 class="text-xl font-bold text-stone-900 mb-2">Spicy Flamin' Chicken Pastil</h3>
+                        <p class="text-stone-600 text-sm leading-relaxed">
+                            Our original recipe combined with locally sourced crushed chili flakes and warm spices. A punchy heat that highlights the chicken without overpowering it.
                         </p>
-                        <div class="flex items-center gap-4">
-                            <div class="w-12 h-12 rounded-full bg-slate-700 flex items-center justify-center font-bold text-indigo-400 border border-slate-600">
-                                JM
-                            </div>
-                            <div>
-                                <h4 class="text-white font-semibold">Jared M.</h4>
-                                <p class="text-slate-500 text-sm">Founder, Core Media Agency</p>
-                            </div>
-                        </div>
                     </div>
-
-                </div>
-
-                <!-- Slider Controls -->
-                <div class="flex justify-center gap-4 mt-8">
-                    <button id="prev-slide" class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center text-slate-400 hover:text-white hover:border-slate-500 transition-all active:scale-90">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </button>
-                    <button id="next-slide" class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center text-slate-400 hover:text-white hover:border-slate-500 transition-all active:scale-90">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </button>
+                    <div class="mt-6 pt-4 border-t border-stone-100 flex items-center justify-between">
+                        <span class="text-xs text-stone-400"><i class="fa-solid fa-fire text-red-500 mr-1"></i> Crowd Favorite</span>
+                        <a href="#order" class="text-xs font-bold text-amber-600 hover:text-amber-700">Add to Order <i class="fa-solid fa-plus ml-1"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Process Section -->
-    <section id="process" class="py-20 bg-slate-950 border-t border-slate-800">
+    <!-- Simple Slider Reviews Section -->
+    <section id="reviews" class="py-20 bg-white relative">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-xs font-bold uppercase tracking-widest text-purple-400 mb-3">Our Framework</h2>
-                <p class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Three steps to seamless operation</p>
+            <div class="text-center max-w-xl mx-auto mb-12">
+                <h2 class="text-xs font-bold uppercase tracking-widest text-amber-600 mb-2">Customer Spotlight</h2>
+                <p class="text-3xl font-bold text-stone-900 tracking-tight">Why Kagura Fans Keep Ordering</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto relative">
-                <!-- Step 1 -->
-                <div class="relative bg-slate-900 border border-slate-800 p-6 rounded-xl">
-                    <div class="absolute -top-4 -left-4 w-10 h-10 rounded-xl bg-blue-600 text-white flex items-center justify-center font-bold shadow-lg shadow-blue-500/20">
-                        1
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2 mt-2">Discovery & Map</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        We sit down and audit your current operational bottlenecks, tracing exactly where human time is lost and leads leak out.
+            <!-- Review Items Container -->
+            <div class="max-w-2xl mx-auto relative min-h-[180px] flex items-center">
+                <!-- Slide 1 -->
+                <div class="review-slide w-full text-center transition-all duration-500 opacity-100 scale-100 absolute pointer-events-auto">
+                    <p class="text-lg text-stone-700 italic mb-6">
+                        "The Arabic twist makes a huge difference! It isn't just basic salty chicken pastil; you can actually smell the spices the moment you unwrap the rice packaging. Absolutely addictive."
                     </p>
+                    <h4 class="font-bold text-stone-900 text-sm">— Mark A., Regular Customer</h4>
                 </div>
 
-                <!-- Step 2 -->
-                <div class="relative bg-slate-900 border border-slate-800 p-6 rounded-xl">
-                    <div class="absolute -top-4 -left-4 w-10 h-10 rounded-xl bg-indigo-600 text-white flex items-center justify-center font-bold shadow-lg shadow-indigo-500/20">
-                        2
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2 mt-2">Architect & Integrate</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        We build out your automation blueprints using clean API protocols, custom webhooks, and secure cloud platforms.
+                <!-- Slide 2 -->
+                <div class="review-slide w-full text-center transition-all duration-500 opacity-0 scale-95 absolute pointer-events-none">
+                    <p class="text-lg text-stone-700 italic mb-6">
+                        "Authentic flavor, incredibly clean preparation, and it hits the spot every single time. Finding proper, delicious Halal options can be tough around here, but Kagura completely nails it."
                     </p>
+                    <h4 class="font-bold text-stone-900 text-sm">— S. Rahma, Foodie Reviewer</h4>
                 </div>
+            </div>
 
-                <!-- Step 3 -->
-                <div class="relative bg-slate-900 border border-slate-800 p-6 rounded-xl">
-                    <div class="absolute -top-4 -left-4 w-10 h-10 rounded-xl bg-purple-600 text-white flex items-center justify-center font-bold shadow-lg shadow-purple-500/20">
-                        3
-                    </div>
-                    <h3 class="text-lg font-bold text-white mb-2 mt-2">Deploy & Optimize</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">
-                        We put infrastructure live, rigorously test paths, and continuously train your custom systems to optimize conversion performance.
-                    </p>
-                </div>
+            <!-- Controls -->
+            <div class="flex justify-center gap-4 mt-6">
+                <button id="prev-rev" class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-stone-400 hover:text-amber-600 hover:border-amber-400 transition-all">
+                    <i class="fa-solid fa-chevron-left text-xs"></i>
+                </button>
+                <button id="next-rev" class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-stone-400 hover:text-amber-600 hover:border-amber-400 transition-all">
+                    <i class="fa-solid fa-chevron-right text-xs"></i>
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- Contact & Lead Capture Form Section -->
-    <section id="contact" class="py-20 relative">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="bg-gradient-to-b from-slate-800/80 to-slate-900/80 border border-slate-800 p-8 md:p-12 rounded-3xl shadow-2xl backdrop-blur-sm">
+    <!-- Interactive Lead & Order Form Section -->
+    <section id="order" class="py-20 bg-stone-900 text-stone-100 relative">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-stone-800 border border-stone-700 p-8 md:p-10 rounded-3xl shadow-xl">
                 <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold text-white tracking-tight mb-3">Request a Free Automation Audit</h2>
-                    <p class="text-slate-400 text-sm max-w-md mx-auto"> Let's discover exactly how many hours we can buy back for your organization. Drop your information below to get started. </p>
+                    <h2 class="text-3xl font-bold text-white mb-2">Place Your Advance Order</h2>
+                    <p class="text-stone-400 text-xs sm:text-sm max-w-md mx-auto">
+                        Skip the waiting lines! Fill out your delivery or pickup preference, and our kitchen team will set aside your batch.
+                    </p>
                 </div>
 
-                <form id="audit-form" class="space-y-6">
+                <form id="order-form" class="space-y-6">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
-                            <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Your Name</label>
-                            <input type="text" id="name" name="name" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-blue-500 transition-colors text-sm" placeholder="John Doe">
+                            <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-stone-400 mb-2">Name</label>
+                            <input type="text" id="name" required class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm" placeholder="Your Name">
                         </div>
                         <div>
-                            <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Business Email</label>
-                            <input type="email" id="email" name="email" required class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-blue-500 transition-colors text-sm" placeholder="john@company.com">
+                            <label for="phone" class="block text-xs font-semibold uppercase tracking-wider text-stone-400 mb-2">Mobile Number</label>
+                            <input type="tel" id="phone" required class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm" placeholder="0912 345 6789">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label for="item-select" class="block text-xs font-semibold uppercase tracking-wider text-stone-400 mb-2">Select Style</label>
+                            <select id="item-select" class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-stone-300 focus:outline-none focus:border-amber-500 text-sm">
+                                <option value="original">Original Arabic Twist Blend (Mild)</option>
+                                <option value="spicy">Flamin' Chicken Pastil (Spicy)</option>
+                                <option value="combo">Mix Bundle (Both Flavors)</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="qty" class="block text-xs font-semibold uppercase tracking-wider text-stone-400 mb-2">Quantity</label>
+                            <input type="number" id="qty" min="1" value="1" class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm">
                         </div>
                     </div>
 
                     <div>
-                        <label for="bottleneck" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">What's your biggest operational bottleneck?</label>
-                        <select id="bottleneck" name="bottleneck" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-400 focus:outline-none focus:border-blue-500 transition-colors text-sm">
-                            <option value="" disabled selected>Select an option...</option>
-                            <option value="leads">Losing or forgetting to follow up with leads</option>
-                            <option value="data">Too much manual data entry/spreadsheets</option>
-                            <option value="support">Overwhelmed by support emails & messaging</option>
-                            <option value="other">Something else completely</option>
-                        </select>
+                        <label for="notes" class="block text-xs font-semibold uppercase tracking-wider text-stone-400 mb-2">Delivery Address or Special Pickup Instructions</label>
+                        <textarea id="notes" rows="3" class="w-full bg-stone-900 border border-stone-700 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-500 text-sm resize-none" placeholder="Enter your full street details or specify tracking options..."></textarea>
                     </div>
 
-                    <div>
-                        <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">Additional Context (Optional)</label>
-                        <textarea id="message" name="message" rows="4" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-600 focus:outline-none focus:border-blue-500 transition-colors text-sm resize-none" placeholder="Tell us a bit about your current software tools..."></textarea>
-                    </div>
-
-                    <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-4 rounded-xl text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 transition-all shadow-xl shadow-blue-500/20 active:scale-[0.99]">
-                        Submit Audit Request
+                    <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-4 rounded-xl text-base font-bold text-stone-900 bg-amber-500 hover:bg-amber-400 transition-all shadow-lg shadow-amber-500/20 active:scale-[0.99]">
+                        Send Order to Kitchen
                     </button>
                 </form>
 
-                <!-- Success State (Hidden by default) -->
-                <div id="form-success" class="hidden text-center py-8 space-y-4">
-                    <div class="w-16 h-16 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-3xl rounded-full flex items-center justify-center mx-auto">
-                        <i class="fa-solid fa-circle-check"></i>
+                <!-- Success Handler Container UI Toggle -->
+                <div id="order-success" class="hidden text-center py-8 space-y-4">
+                    <div class="w-16 h-16 bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 text-3xl rounded-full flex items-center justify-center mx-auto">
+                        <i class="fa-solid fa-fire-burner"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white">Audit Requested Successfully!</h3>
-                    <p class="text-slate-400 text-sm max-w-sm mx-auto">Thank you for reaching out. Our engineering architecture team will review your business input and respond within 24 business hours.</p>
+                    <h3 class="text-2xl font-bold text-white">Order Received!</h3>
+                    <p class="text-stone-400 text-sm max-w-sm mx-auto">We've passed your ticket directly over to the main Kagura counter. Keep your phone close; we will message or call you shortly to verify billing and dispatch status!</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-slate-950 border-t border-slate-900 py-12 text-center text-sm text-slate-500">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
-            <div class="flex items-center justify-center gap-2 text-xl font-bold bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">
-                <i class="fa-solid fa-cubes-stacked"></i> ApexFlow
-            </div>
-            <div class="flex justify-center space-x-6 text-base">
-                <a href="#" class="text-slate-600 hover:text-slate-400"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#" class="text-slate-600 hover:text-slate-400"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#" class="text-slate-600 hover:text-slate-400"><i class="fa-brands fa-github"></i></a>
-            </div>
-            <p>&copy; 2026 ApexFlow Automations. All rights reserved. Built for modern operational scaling.</p>
+    <footer class="bg-stone-950 border-t border-stone-900 py-12 text-center text-xs text-stone-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+            <p class="text-amber-600/80 font-bold text-sm tracking-wider uppercase">Kagura Fresh Chicken Pastil</p>
+            <p>&copy; 2026 Kagura Store Food Group. Proudly serving authentic Halal-certified ingredients. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Interactive JavaScript -->
+    <!-- Interactive JavaScript Component Hooks -->
     <script>
-        // 1. Mobile Menu Toggle Logic
+        // Menu Toggle handling
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const menuIcon = document.getElementById('menu-icon');
@@ -342,7 +318,7 @@
             }
         });
 
-        // Close mobile menu immediately upon choosing a navigation item link
+        // Close dropdown once individual elements get parsed by view viewport click bindings
         const mobileNavLinks = mobileMenu.querySelectorAll('a');
         mobileNavLinks.forEach(link => {
             link.addEventListener('click', () => {
@@ -351,15 +327,15 @@
             });
         });
 
-        // 2. Simple Client-Side Testimonial Slider Loop Logic
-        const slides = document.querySelectorAll('.testimonial-slide');
-        const prevBtn = document.getElementById('prev-slide');
-        const nextBtn = document.getElementById('next-slide');
-        let currentSlideIndex = 0;
+        // Simple Client-Side Reviews Carousel Rotation
+        const revSlides = document.querySelectorAll('.review-slide');
+        const prevRevBtn = document.getElementById('prev-rev');
+        const nextRevBtn = document.getElementById('next-rev');
+        let activeRevIndex = 0;
 
-        function updateSlidePosition(index) {
-            slides.forEach((slide, i) => {
-                if (i === index) {
+        function updateReviewSlidePosition(targetIndex) {
+            revSlides.forEach((slide, i) => {
+                if (i === targetIndex) {
                     slide.classList.replace('opacity-0', 'opacity-100');
                     slide.classList.replace('scale-95', 'scale-100');
                     slide.classList.replace('pointer-events-none', 'pointer-events-auto');
@@ -371,34 +347,33 @@
             });
         }
 
-        nextBtn.addEventListener('click', () => {
-            currentSlideIndex = (currentSlideIndex + 1) % slides.length;
-            updateSlidePosition(currentSlideIndex);
+        nextRevBtn.addEventListener('click', () => {
+            activeRevIndex = (activeRevIndex + 1) % revSlides.length;
+            updateReviewSlidePosition(activeRevIndex);
         });
 
-        prevBtn.addEventListener('click', () => {
-            currentSlideIndex = (currentSlideIndex - 1 + slides.length) % slides.length;
-            updateSlidePosition(currentSlideIndex);
+        prevRevBtn.addEventListener('click', () => {
+            activeRevIndex = (activeRevIndex - 1 + revSlides.length) % revSlides.length;
+            updateReviewSlidePosition(activeRevIndex);
         });
 
-        // 3. Form Validation & Client-Side UX Management
-        const auditForm = document.getElementById('audit-form');
-        const formSuccessState = document.getElementById('form-success');
+        // Form Validation & Client State Interceptor Layout Logic
+        const orderForm = document.getElementById('order-form');
+        const orderSuccessState = document.getElementById('order-success');
 
-        auditForm.addEventListener('submit', (e) => {
-            e.preventDefault(); // Stop default form target handling redirection
+        orderForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const clientName = document.getElementById('name').value.trim();
+            const clientPhone = document.getElementById('phone').value.trim();
 
-            const nameValue = document.getElementById('name').value.trim();
-            const emailValue = document.getElementById('email').value.trim();
-
-            if(nameValue === "" || emailValue === "") {
-                alert("Please fill out all required validation areas layout elements correctly.");
+            if (clientName === "" || clientPhone === "") {
+                alert("Please complete name and contact parameters layout items correctly.");
                 return;
             }
 
-            // Hide the active input parameters layout visually, trigger success animation transition view state
-            auditForm.classList.add('hidden');
-            formSuccessState.classList.remove('hidden');
+            orderForm.classList.add('hidden');
+            orderSuccessState.classList.remove('hidden');
         });
     </script>
 </body>
